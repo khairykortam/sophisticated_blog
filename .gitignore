@@ -1,0 +1,9 @@
+node_modules/
+.env
+.npm
+.svelte-kit/
+.next/
+build/
+dist/
+.vscode/
+
