@@ -1,15 +1,13 @@
 <script>
-	import favicon from '$lib/assets/favicon.svg';
-	import NavBar from './navbar.svelte';
-	import Main from './main.svelte'
-	let { children } = $props();
+  import favicon from "$lib/assets/favicon.svg";
+  import NavBar from "./navbar.svelte";
+  // import Main from './main.svelte' // Commented out to remove unused import
+  let { children } = $props();
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+  <link rel="icon" href={favicon} />
 </svelte:head>
-<NavBar/>
-<Main/>
+<NavBar />
 
-
-{@render children()}
+<slot />

@@ -1,0 +1,10 @@
+{
+  "name": "sophisticated_blog",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "cd front-end && npm run dev",
+    "install:front-end": "cd front-end && npm install",
+    "start": "npm run dev"
+  }
+}
