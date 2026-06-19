@@ -1,1 +1,5 @@
-<h1> BOOOKs</h1>
+<script>
+    import Blog from '../blog/+page.svelte'
+</script>
+
+
