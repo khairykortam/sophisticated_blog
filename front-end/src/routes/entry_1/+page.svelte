@@ -2,13 +2,13 @@
 
 </script>
 <svelte:head>
-  <title>Entry 1</title>
+  <title>Animal Farm</title>
 </svelte:head>
 <main class="post">
 <div class="post-content">
     <header class="post-header">
     <h1 class="post-title">
-    Entry 1
+    Animal Farm
     </h1>
     </header>
     <div class="post-body">

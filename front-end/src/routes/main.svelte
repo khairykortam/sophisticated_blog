@@ -33,6 +33,14 @@
 
       type();
     }
+    const Photo = document.querySelector('.image');
+    // const normalPhoto = document.querySelector('.image img')
+    Photo.addEventListener('mouseenter', ()=>{
+
+    });
+    Photo.addEventListener('mouseleave', ()=>{
+        
+        })
   });
 </script>
 
@@ -48,20 +56,22 @@
         </p>
       </div>
       <div class="image">
-        <img src="/assets/me.jpeg" alt="sombody" loading="lazy" />
+      <div class="photo-wrap" aria-hidden="true">
+        <img class="photo normal" src="/assets/normal.jpg" alt="normal" loading="lazy" />
+        <img class="photo me" src="/assets/me.jpeg" alt="me" loading="lazy" />
+      </div>
       </div>
     </div>
   </div>
-</main>
-
-<!-- </body> -->
-
+  </main>
 <style>
   /* body {
      height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #faf9f6;
+    padding: 20px 20px 100px;
+    background-color: #F0EBE0;
+    min-height: calc(100vh - 40px);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -120,11 +130,39 @@
     font-size: 3.5em;
   }
   .image {
-    flex-shrink: 0;
-    width: 200px;
-    height: 200px;
+      flex-shrink: 0;
+      width: 200px;
+      height: 200px;
+    }
+  .photo-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     overflow: hidden;
+  }
+  .photo {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 320ms ease, transform 320ms ease;
+    border-radius: 50%;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+  .photo.me {
+    opacity: 0;
+    transform: scale(1);
+  }
+  .image:hover .photo.me {
+    opacity: 1;
+    transform: scale(1.03);
+  }
+  .image:hover .photo.normal {
+    opacity: 0;
+    transform: scale(0.98);
   }
   #text-about-me-container {
     font-size: 1.5em;
