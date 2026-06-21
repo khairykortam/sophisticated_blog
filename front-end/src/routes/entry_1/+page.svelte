@@ -1,18 +1,20 @@
 <script>
+  import Entry1 from "./entry_1.svelte";
+
 
 </script>
 <svelte:head>
-  <title>Animal Farm</title>
+  <title>Entry1</title>
 </svelte:head>
 <main class="post">
 <div class="post-content">
     <header class="post-header">
     <h1 class="post-title">
-    Animal Farm
+    Entry 1
     </h1>
     </header>
     <div class="post-body">
-        <p>lorem ipsum</p>
+        <p>Sorry, i was so lazy to add a new one here</p>
     </div>
 </div>
 </main>

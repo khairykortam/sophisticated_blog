@@ -42,6 +42,7 @@
             </p>
             <p>
               However, pigs dominate and violate all the rules, killing animals, trading with humans, and betraying their own kind.
+           Sad Ending ):.
             </p>
        
     </div>
