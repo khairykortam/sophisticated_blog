@@ -76,11 +76,11 @@
     margin-bottom: 15px;
     font-size: 1.8em;
 }
-.book-body h3 {
+/*.book-body h3 {
     margin-top: 30px;
     margin-bottom: 15px;
     font-size: 1.8em;
-}
+}*/
 .book-body p {
     margin-bottom: 20px;
 }

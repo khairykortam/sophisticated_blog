@@ -1,6 +1,8 @@
 <script>
   import { onMount } from "svelte";
+  import { fetchWeather} from './API.js';
 
+  fetchWeather();
   onMount(() => {
     const typedText = document.getElementById("text-about-me");
     const cursor = document.querySelector(".cursor");
@@ -42,9 +44,19 @@
         
         })
   });
+  
+  
 </script>
 
 <!-- <body> -->
+ <div class="weather" id="weather">
+    <div class="weather-info">
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="location"></p>
+    </div>
+
+ </div>
 <main class="home-page">
   <div class="landing">
     <div class="content-wrapper">
@@ -77,7 +89,21 @@
     background-position: center;
         
 } */
-  main {
+.weather {
+    display: grid;
+    width: 200px;
+    height: 100px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -92,9 +118,7 @@
     align-items: center;
     padding: 0;
   }
-  h1,
-  h2,
-  h3 {
+  h1 {
     font-family: "Georgia", Times, serif;
     color: #3b2e26;
     margin-top: 1.5em;
